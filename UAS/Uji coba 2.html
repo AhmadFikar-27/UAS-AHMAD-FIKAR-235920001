@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website E-Commerce</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Halaman Utama (Home) -->
+<section id="home" class="mb-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100" alt="Banner 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Selamat Datang di E-Commerce Kami</h5>
+                    <p>Temukan produk terbaik kami.</p>
+                    <a href="#products" class="btn btn-primary">Lihat Produk</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100" alt="Banner 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Produk Berkualitas</h5>
+                    <p>Dapatkan diskon besar-besaran!</p>
+                    <a href="#products" class="btn btn-primary">Lihat Produk</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jpg" class="d-block w-100" alt="Banner 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Belanja Sekarang</h5>
+                    <p>Jangan lewatkan penawaran menarik!</p>
+                    <a href="#products" class="btn btn-primary">Lihat Produk</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- Halaman Produk (Product) -->
+<section id="products" class="mb-5">
+    <h2 class="text-center mb-4">Produk Kami</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="3.jpg" class="card-img-top" alt="Produk 1">
+                    <div class="card-body">
+                        <h5 class="card-title">SAMSUNG Galaxy A05s</h5>
+                        <p class="card-text">Harga: Rp 2.199.000</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="2.jpg" class="card-img-top" alt="Produk 2">
+                    <div class="card-body">
+                        <h5 class="card-title">SAMSUNG Galaxy M15 5G</h5>
+                        <p class="card-text">Harga: Rp 2.499.000</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="1.jpg" class="card-img-top" alt="Produk 3">
+                    <div class="card-body">
+                        <h5 class="card-title">SAMSUNG Galaxy A16 5G</h5>
+                        <p class="card-text">Harga: Rp 3.799.000</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Produk 1 -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel1">Detail Produk 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="3.jpg" class="img-fluid" alt="Produk 1">
+                <p>Nama: SAMSUNG Galaxy A05s</p>
+                <p>Harga: Rp 2.199.000</p>
+                <p>Deskripsi: Samsung Galaxy A05s akan menggunakan chipset Snapdragon 680 sebagai sumber tenaganya. Prosesor keluaran tahun 2021 sempat jadi salah satu yang terbaik di kelas harga Rp 3 jutaan.  Prosesor itu dikombinasikan dengan RAM 6GB dan memori internal 128GB untuk mengolah berbagai data, termasuk memberikan dukungan kuat untuk aktivitas berat seperti gaming. Secara tampilan, Anda juga sudah bisa mendapatkan layar FHD+ dengan refresh rate 90Hz yang jelas akan memanjakan mata. Kebutuhan fotografi Anda juga akan dimanjakan dengan cukup baik. Samsung A05s memiliki tiga buah kamera belakang, masing-masing 50MP (wide), 2MP (macro), dan 2MP (depth), serta sudah mampu menghasilkan video beresolusi 1080p@30/60fps. Untuk selfie dan video call, ada kamera depan 13MP yang juga sudah bisa merekam video dengan resolusi 1080p@30fps. Terakhir, Anda bisa mendapatkan dukungan baterai 5.000 mAh dengan fast charging hingga 25W. Kelengkapan lain seperti dual SIM, port USB Type C, audio jack 3,5mm, serta sensor sidik jari juga tersedia.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produk 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel2">Detail Produk 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="2.jpg" class="img-fluid" alt="Produk 2">
+                <p>Nama: SAMSUNG Galaxy M15 5G</p>
+                <p>Harga: Rp 2.499.000</p>
+                <p>Deskripsi: Samsung Galaxy M15 5G adalah ponsel kelas menengah yang memiliki beberapa fitur unggulan, di antaranya:
+                    Layar: Layar AMOLED 6,5 inci dengan resolusi Full HD Plus dan refresh rate 90 Hz. 
+                    Baterai: Baterai berkapasitas 6.000 mAh yang mendukung pengisian daya cepat 25 W. Samsung mengklaim bahwa baterai ini dapat bertahan selama tiga hari pemakaian normal atau seharian penuh untuk bermain game. 
+                    Kamera: Kamera belakang dengan tiga kamera, yaitu kamera utama 50 MP, lensa ultra-wide 5 MP, dan lensa makro 2 MP. Kamera depan memiliki resolusi 13 MP. 
+                    Chipset: Chipset MediaTek Dimensity 6100 Plus yang mendukung jaringan 5G. 
+                    RAM dan storage: RAM 6 GB dan storage 128 GB yang dapat diperluas hingga 1 TB dengan kartu microSD. 
+                    Fitur keamanan: Fitur keamanan berupa side-fingerprint dan Samsung Knox Vault. 
+                    Fitur Voice Focus: Fitur yang dapat memisahkan suara pengguna dari gangguan bising di sekitar. 
+                    Sistem operasi: Android 14, One UI 6. 
+                    Dimensi: 160.1 x 76.8 x 9.3 mm. 
+                    Berat: 217 g. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produk 3 -->
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel3">Detail Produk 3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="1.jpg" class="img-fluid" alt="Produk 3">
+                <p>Nama: SAMSUNG Galaxy A16 5G</p>
+                <p>Harga: Rp 3.799.000</p>
+                <p>Deskripsi: Samsung Galaxy A16 5G memiliki dimensi 164,4 x 77,9 x 7,9 mm dengan bobot sekitar 192 gram. Di bagian muka, Samsung A16 5G dibekali layar Super Amoled 6,7 inci,  Layar Samsung A16 5G mendukung resolusi Full HD+ (1080 x 2340 piksel), refresh rate 90 Hz, dan tingkat kecerahan puncak 800 nits. Di bagian layar Samsung Galaxy A16 5G itu, terdapat terdapat modul "Infinity-U" yang memuat kamera selfie 13 MP (f/2.0). Kemudian, beralih ke bagian punggung, spesifikasi Samsung A16 5G dibekali tiga kamera belakang, yaitu kamera utama 50 MP (f/1.8), kamera ultrawide 5 MP (f/2.2), dan kamera makro 2 MP (f/2.4). Untuk sektor hardware, spesifikasi Galaxy A16 5G mengusung model chipset yang lebih baru dengan memakai Dimensity 6300. Chipset ini dapat mendukung performa yang mulus saat ponsel digunakan untuk bermain game, menonton video berkualitas tinggi, dan multitasking. Samsung Galaxy A16 5G hanya memiliki satu varian RAM dan memori penyimpanan. Performa dari chip ponsel ini dipadukan dengan RAM 8 GB dan memori penyimpanan sebesar 256 GB. Untuk urusan daya, spesifikasi Samsung A16 5G mengusung baterai 5.000 mAh, dengan dukungan pengisian daya cepat 25 W. Sementara itu, di sektor software, Samsung Galaxy A16 5G dibekali dukungan yang menarik. Galaxy A16 5G mendapatkan dukungan pembaruan sistem operasi (update OS) Android hingga enam generasi. Dukungan ini bisa membuat umur pakai Galaxy A16 5G bisa berjalan dalam waktu yang lebih lama.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Halaman Kontak (Contact) -->
+<section id="contact" class="mb-5">
+    <h2 class="text-center mb-4">Kontak Kami</h2>
+    <div class="container">
+        <form onsubmit="alert('Form telah dikirim!'); return false;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+</section>
+
+<script>
+// Notifikasi setelah tombol "Beli Sekarang" diklik
+const buyButtons = document.querySelectorAll('.btn-primary');
+buyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Produk telah ditambahkan ke keranjang');
+    });
+});
+</script>
+</body>
+</html>
